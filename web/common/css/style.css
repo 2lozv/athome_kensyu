@@ -1,0 +1,52 @@
+#headerInner{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#logo{
+    float: left;
+}
+
+#headerRight{
+    float: right;
+}
+
+#headerRight form{
+    float: left;
+    margin-right: 13px;
+    margin-top: 5px;
+}
+
+#headerRight form img{
+    vertical-align: middle;
+}
+
+#headerRight div{
+    float: right;
+}
+
+#gNavi{
+    clear: both;
+}
+
+/* 模範解答 */
+/* #gNavi{
+    clear: both;
+    width: 960px;
+    margin: 0 auto;
+} */
+
+#gNavi ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* 模範解答 */
+/* #gNavi ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+} */
