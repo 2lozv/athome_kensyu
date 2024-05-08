@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>JavaScript練習</title>
+<style>
+body{
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+  <h1>文字サイズ変更のボタン</h1>
+
+  <p>下のボタンをクリックすると、文字サイズが変わります。</p>
+
+  <input type="button" value="小" onclick="changesize('10px')">
+  <input type="button" value="中" onclick="changesize('20px')">
+  <input type="button" value="大" onclick="changesize('30px')">
+
+<script>
+  function changesize(size){
+    document.getElementsByTagName("body")[0].style.fontSize=size;
+  }
+</script>
+</body>
+</html>

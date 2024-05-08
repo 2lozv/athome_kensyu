@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ノードウォーキング</title>
+</head>
+<body>
+  <h1>大見出し</h1>
+  <ul id="start">
+    <li>リスト１</li>
+    <li>リスト２</li>
+    <li>リスト３</li>
+  </ul>
+  <p>文章</p>
+<script>
+  var startElem = document.getElementById("start");
+  console.log(startElem); //取得した<ul>要素
+
+  console.log("ここから親ノード");
+  console.log(startElem.parentNode); //結果：親ノードの<body>要素
+
+  console.log("ここから子ノード");
+  console.log(startElem.childNodes); //結果：子ノードの<li>要素3つとその前後にある改行やタブ
+  console.log(startElem.childNodes[1]); //結果：2つ目の子ノード(1つ目の<li>要素)
+  console.log(startElem.firstChild); //結果：１つ目の子ノード(改行やタブ)
+
+  console.log("ここから兄弟ノード");
+  console.log(startElem.previousSibling.previousSibling); //結果：兄ノードの<h1>要素
+  console.log(startElem.nextSibling.nextSibling); //結果：弟ノードの<p>要素
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" onclick="action()">
+
+    <script>
+        //基本の出力
+        window.document.write("こんにちは");    //こんにちはを出力しています。
+        window.document.write("こんばんは");
+
+        //プロパティ
+        // document.bgColor="red";
+
+        //アラート
+        // alert("警告です。")
+
+        console.log("こんにちは");
+
+        //変数宣言の仕方
+        var a = "Hello World";
+        document.write(a)
+
+        //変数がどのデータ型を持っているか調べる方法
+        var b = typeof a;
+        window.document.write(b);
+
+        window.document.write(typeof a);
+
+        //配列
+        var a = ["おはよう" , "こんにちは" , "こんばんは"];
+        window.document.write(a[0]);
+        window.document.write(a[1]);
+
+        //配列要素数のカウント
+        var numA = a.length;
+        window.document.write(numA);
+
+        var name = "濵本風海";
+        var str = "こんにちは" + name + "さん";
+        window.document.write(str);
+
+        //if文
+        var a = 1;
+        if(a > 2){
+            window.document.write("aは2より大きい");
+        }else{
+            window.document.write("aは2より小さい");
+        }
+
+        //else if
+        var a = 5;
+        if(a < 0){
+            window.document.write("aの値は負です");
+        }else if(a === 0){
+            window.document.write("aの値はゼロです");
+        }else if(a > 0){
+            window.document.write("aの値は正です");
+        }else{
+            window.document.write("aは数値ではありません");
+        }
+
+        //for文
+        for(var i = 0; i < 3; i++){
+            document.write(i);
+        }
+
+        for(var i = 3; i < 7; i++){
+            document.write(i);
+        }
+
+        //例題1）配列にaに11、22、33を代入して、for文を使ってすべて取り出してください。
+        var a = ["11" , "22" , "33"];
+        for(var i = 0; i < a.length; i++){
+            document.write(a[i]);
+        }
+
+        //例題2）for文を使って3、2、1、0と下るような数値を出力してください
+        for(var i = a.length -1; i >= 0; i--){
+            document.write(a[i]);
+        }
+
+        //関数（ビルトイン関数）
+        var f1 = Math.floor(10.4);
+        console.log(f1);
+
+        //関数（ユーザー定義関数・引数なし）
+        function action(){
+            window.document.write("クリックされました");
+            window.document.bgColor = "red";
+        }
+
+        action();
+
+        //関数（ユーザー定義関数・引数あり）
+        function rect(width , height){
+            var ans = width * height;
+            console.log(ans)
+        }
+        rect(10,15)
+    </script>
+</body>
+</html>
